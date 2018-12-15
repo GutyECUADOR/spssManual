@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduccion a SPSS</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.css"/> <!-- Estilos flat -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+<body>
+    <!-- Contenedor menu left -->
+
+    <div id="documentation_toc"> 
+    </div>
+        
+    <div id="documentation_content">
+        <div class="documentation_header">
+        </div>
+
+        <div class="uk-grid">
+            <div class="uk-width-small-8-10 uk-container-center">
+                <div class="md-card">
+
+                    <div class="md-card-header">
+                        <span class="uk-badge uk-badge-notification uk-badge-danger">v1.0</span>
+                    </div>
+
+                    <!-- main menu -->
+                    <div class="doc_section">
+                        <h2>Bienvenido/a <spam id="spamUsuario"></spam></h2> 
+                        
+                        <div class="doc_section">
+                            <video id="videoIntro" width="auto" height="auto" controls>
+                                <source src="assets/videos/header_bg.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+
+                        <div class="uk-margin-large-bottom">
+                            <p><strong>Video 1.</strong> Introducción & Bienvenida al curso.</p>
+                            <h5>Temario: </h5>
+                            <ul>
+                                <li>Material Design</li>
+                                <li>Landing Page</li>
+                                <li>HTML/PHP and AngularJS version</li>
+                                <li>Based on UIkit</li>
+                                <li>Easily customizable (less files)</li>
+                                <li>HTML5/CSS3</li>
+                                <li>Responsive layout</li>
+                                <li>High Resolution</li>
+                                <li>Custom pages: Invoices, User Profile, User Edit, Scrum Board, Chat, Mailbox and more</li>
+                                <li>
+                                    Custom components
+                                    <ul>
+                                        <li>Accordions</li>
+                                        <li>Dropdowns</li>
+                                        <li>Dynamic Grid</li>
+                                        <li>Lightbox/Modal</li>
+                                        <li>Nestable</li>
+                                        <li>Sortable</li>
+                                        <li>Notifications</li>
+                                        <li>Preloaders</li>
+                                        <li>Tabs</li>
+                                    </ul>
+                                </li>
+                                <li>Integrated KendoUI components</li>
+                                <li>Integrated charting libraries: c3.js MetricsGraphics.js Chartist</li>
+                                <li>Integrated plugins: Datatbles, Full Calendar, Code Editor, Maplace (Google Maps), Mapael (Vector Maps) and more</li>
+                                <li>
+                                    Integrated form components:
+                                    <ul>
+                                        <li>Sliders</li>
+                                        <li>Advanced select</li>
+                                        <li>Datepicker</li>
+                                        <li>Timepicker</li>
+                                        <li>Masked inputs</li>
+                                        <li>Html Editor</li>
+                                        <li>File uploader</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="uk-margin-large-bottom">
+                            <h3>Introduccion</h3>
+                        </div>    
+
+                        <div class="uk-margin-large-bottom">
+                            <h3>Consideraciones </h3>
+                            <p>This folder contains all source files that you can use to build custom template.</p>
+                            <p>Altair is build on <a href="http://lesscss.org/">LESS</a> (CSS preprocessor), uses <a href="http://bower.io/">Bower</a> as a package manager and uses <a href="http://gulpjs.com/">Gulp</a> for its build system.</p>
+                            <pre class="uk-margin-large-bottom"><code class="language-markup">/src
+                            ├── assets/
+                            │   ├── css/
+                            │   ├── icons/
+                            │   │   ├── flags/
+                            │   │   ├── material-design-icons/
+                            │   │   └── others/
+                            │   ├── img/
+                            │   │   ├── avatars/
+                            │   │   ├── ecommerce/
+                            │   │   ├── gallery/
+                            │   │   ├── md-images/
+                            │   │   └── spinners/
+                            │   ├── js/
+                            │   │   ├── custom/
+                            │   │   └── pages/
+                            │   ├── less/
+                            │   │   ├── components/
+                            │   │   ├── md/
+                            │   │   ├── pages/
+                            │   │   ├── partials/
+                            │   │   └── plugins/
+                            │   └── skins/
+                            │       ├── ckeditor/
+                            │       ├── dropify/
+                            │       ├── jquery.fancytree/
+                            │       ├── jquery-ui/
+                            │       ├── jtable/
+                            │       └── tinymce/
+                            ├── data/
+                            ├── helpers/
+                            └── php/
+                            </code></pre>
+                        
+
+                        </div>
+
+                        <div class="uk-margin-large-bottom">
+                            <h4>LESS</h4>
+                            <p>For easy customization Less files are included in Altair. This files are located in <code>/src/assets/less/</code> folder.</p>
+                            <p>Folder structure and description:</p>
+                            <table class="uk-table uk-table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Folder</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>components/</code></td>
+                                        <td>Custom components</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>md/</code></td>
+                                        <td>Material design styles (buttons, colors, cards, shadows etc.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>pages/</code></td>
+                                        <td>Page specific styles</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>partials/</code></td>
+                                        <td>Styles for header, sidebars and top bar</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>plugins/</code></td>
+                                        <td>Custom styles for plugins</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>altair_admin.less</code></td>
+                                        <td>Main styles</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>kendo_ui_custom.less</code></td>
+                                        <td>KendoUI components</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>main.less</code></td>
+                                        <td>Main less file processed by <code>gulp less_main</code> task</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>print.less</code></td>
+                                        <td>Print styles</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>uikit_custom.less</code></td>
+                                        <td>UIkit custom styles</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>variables_mixins.less</code></td>
+                                        <td>Variables like height/width/colors and some mixins used in this template</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="uk-margin-large-bottom">
+                            <h3>Compiled code (/dist)</h3>
+                            <p>This folder contains production ready files (minified JavaScript, compressed CSS, HTML files).</p>
+                            <h5>Folder structure</h5>
+                                <pre class="uk-margin-large-bottom"><code class="language-markup">/src
+                                    ├── assets/
+                                    │   ├── css/
+                                    │   │   ├── themes/
+                                    │   ├── icons/
+                                    │   │   ├── flags/
+                                    │   │   └── material-design-icons/
+                                    │   ├── img/
+                                    │   │   ├── avatars/
+                                    │   │   ├── ecommerce/
+                                    │   │   ├── gallery/
+                                    │   │   ├── md-images/
+                                    │   │   └── spinners/
+                                    │   ├── js/
+                                    │   │   ├── custom/
+                                    │   │   └── pages/
+                                    │   └── skins/
+                                    │       ├── ckeditor/
+                                    │       ├── dropify/
+                                    │       ├── jquery.fancytree/
+                                    │       ├── jquery-ui/
+                                    │       ├── jtable/
+                                    │       └── tinymce/
+                                    ├── bower_components/
+                                    └── data/
+                                </code></pre>
+                            <h4>CSS Files</h4>
+                            Common stylesheets used in all pages:
+
+                            <p>Aditionals styles are loaded in <code>&lt;head&gt;</code> section bellow <code>&lt;!-- additional styles for plugins --&gt;</code> comment.</p>
+
+                            <h4>JS Files</h4>
+                            Common JS used in all pages:
+
+                            <p>Aditional JS files that comes from third-party plugins are loaded bellow <code>&lt;!-- page specific plugins --&gt;</code> comment.</p>
+
+                        </div>
+
+                        <h4>HTML Structure</h4>
+
+
+                    </div> 
+
+                    <!-- main menu -->
+                    <div class="doc_section">
+                        <h2>Unidad 1: Conceptos Básicos</h2>
+                        <h3>Introduccion</h3>
+                        <p>
+                            To hide sidebar (menu) on page load remove class <code>sidebar_main_open</code> from <code>&lt;body&gt;</code> element.
+                            <br> Main sidebar is hidden by default when the viewport is smaller than 1220 pixels
+                        </p>
+                        <h3>Ejemplos</h3>
+                        <p>
+                            To show mini sidebar on page load remove <code>sidebar_main_open sidebar_main_swipe</code> classes from <code>&lt;body&gt;</code> and add <code>sidebar_mini</code> class to <code>&lt;body&gt;</code>
+                        </p>
+                        <h3>Materiales Adjuntos</h3>
+                        <p>
+                            To show slim sidebar on page load remove <code>sidebar_main_open sidebar_main_swipe</code> classes from <code>&lt;body&gt;</code> and add <code>sidebar_slim sidebar_slim_inactive</code> class to <code>&lt;body&gt;</code>
+                        </p>
+                        <h3>Evaluación</h3>
+                        <strong style="text-transform: uppercase;">HTML</strong>
+                        <p>
+                            To enable accordion mode add <code>accordion_mode</code> class to <code>&lt;aside id=&quot;sidebar_main&quot; class=&quot;accordion_mode&quot;&gt;&lt;/aside&gt;</code>
+                        </p>
+                        <strong style="text-transform: uppercase;">AngularJS</strong>
+                        <p>
+                            To enable accordion mode add <code>$rootScope.menuAccordionMode = true;</code> to <code>run block</code> in <code>app/app.js</code>
+                        </p>
+                    </div>
+
+                    <!-- main menu -->
+                    <div class="doc_section">
+                        <h2>Unidad 2: Funciones & Análisis</h2>
+                        <h3>Introduccion</h3>
+                        <p>
+                            To hide sidebar (menu) on page load remove class <code>sidebar_main_open</code> from <code>&lt;body&gt;</code>
+                            element.
+                            <br> Main sidebar is hidden by default when the viewport is smaller than 1220 pixels
+                        </p>
+                        <h3>Ejemplos</h3>
+                        <p>
+                            To show mini sidebar on page load remove <code>sidebar_main_open sidebar_main_swipe</code> classes from <code>&lt;body&gt;</code>
+                            and add <code>sidebar_mini</code> class to <code>&lt;body&gt;</code>
+                        </p>
+                        <h3>Materiales Adjuntos</h3>
+                        <p>
+                            To show slim sidebar on page load remove <code>sidebar_main_open sidebar_main_swipe</code> classes from <code>&lt;body&gt;</code>
+                            and add <code>sidebar_slim sidebar_slim_inactive</code> class to <code>&lt;body&gt;</code>
+                        </p>
+                        <h3>Evaluación</h3>
+                        <strong style="text-transform: uppercase;">HTML</strong>
+                        <p>
+                            To enable accordion mode add <code>accordion_mode</code> class to <code>&lt;aside id=&quot;sidebar_main&quot; class=&quot;accordion_mode&quot;&gt;&lt;/aside&gt;</code>
+                        </p>
+                        <strong style="text-transform: uppercase;">AngularJS</strong>
+                        <p>
+                            To enable accordion mode add <code>$rootScope.menuAccordionMode = true;</code> to <code>run block</code> in
+                            <code>app/app.js</code>
+                        </p>
+                    </div>
+
+                    <!-- main menu -->
+                    <div class="doc_section">
+                        <h2>Unidad 3: Gráficas</h2>
+                        <h3>Introduccion</h3>
+                        <p>
+                            To hide sidebar (menu) on page load remove class <code>sidebar_main_open</code> from <code>&lt;body&gt;</code>
+                            element.
+                            <br> Main sidebar is hidden by default when the viewport is smaller than 1220 pixels
+                        </p>
+                        <h3>Ejemplos</h3>
+                        <p>
+                            To show mini sidebar on page load remove <code>sidebar_main_open sidebar_main_swipe</code> classes from <code>&lt;body&gt;</code>
+                            and add <code>sidebar_mini</code> class to <code>&lt;body&gt;</code>
+                        </p>
+                        <h3>Materiales Adjuntos</h3>
+                        <p>
+                            To show slim sidebar on page load remove <code>sidebar_main_open sidebar_main_swipe</code> classes from <code>&lt;body&gt;</code>
+                            and add <code>sidebar_slim sidebar_slim_inactive</code> class to <code>&lt;body&gt;</code>
+                        </p>
+                        <h3>Evaluación</h3>
+                        <strong style="text-transform: uppercase;">HTML</strong>
+                        <p>
+                            To enable accordion mode add <code>accordion_mode</code> class to <code>&lt;aside id=&quot;sidebar_main&quot; class=&quot;accordion_mode&quot;&gt;&lt;/aside&gt;</code>
+                        </p>
+                        <strong style="text-transform: uppercase;">AngularJS</strong>
+                        <p>
+                            To enable accordion mode add <code>$rootScope.menuAccordionMode = true;</code> to <code>run block</code> in
+                            <code>app/app.js</code>
+                        </p>
+                    </div>
+
+                    <!-- main menu -->
+                    <div class="doc_section">
+                        <h2>Unidad 4: Muestreo</h2>
+                        <h3>Introduccion</h3>
+                        <p>
+                            To hide sidebar (menu) on page load remove class <code>sidebar_main_open</code> from <code>&lt;body&gt;</code>
+                            element.
+                            <br> Main sidebar is hidden by default when the viewport is smaller than 1220 pixels
+                        </p>
+                        <h3>Ejemplos</h3>
+                        <p>
+                            To show mini sidebar on page load remove <code>sidebar_main_open sidebar_main_swipe</code> classes from <code>&lt;body&gt;</code>
+                            and add <code>sidebar_mini</code> class to <code>&lt;body&gt;</code>
+                        </p>
+                        <h3>Materiales Adjuntos</h3>
+                        <p>
+                            To show slim sidebar on page load remove <code>sidebar_main_open sidebar_main_swipe</code> classes from <code>&lt;body&gt;</code>
+                            and add <code>sidebar_slim sidebar_slim_inactive</code> class to <code>&lt;body&gt;</code>
+                        </p>
+                        <h3>Evaluación</h3>
+                        <strong style="text-transform: uppercase;">HTML</strong>
+                        <p>
+                            To enable accordion mode add <code>accordion_mode</code> class to <code>&lt;aside id=&quot;sidebar_main&quot; class=&quot;accordion_mode&quot;&gt;&lt;/aside&gt;</code>
+                        </p>
+                        <strong style="text-transform: uppercase;">AngularJS</strong>
+                        <p>
+                            To enable accordion mode add <code>$rootScope.menuAccordionMode = true;</code> to <code>run block</code> in
+                            <code>app/app.js</code>
+                        </p>
+                    </div>
+
+                    <!-- main menu -->
+                    <div class="doc_section">
+                        <h2>Despedida</spam>
+                        </h2>
+                    
+                    </div>
+                  
+                </div>  <!-- card end -->
+            </div>  <!-- container center -->
+        </div>
+    </div>
+
+    <!-- google web fonts -->
+    <script>
+        WebFontConfig = {
+            google: {
+                families: [
+                    'Roboto:300,400,500:latin',
+                    'Source+Code+Pro:400,700:latin'
+                ]
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <!-- common functions -->
+    <script src="assets/js/common.js"></script>
+
+    <script src="assets/js/uikit_custom.js"></script>
+    <!-- documentation functions -->
+    <script src="assets/js/altair_documentation.js"></script>
+
+</body>
+</html>
